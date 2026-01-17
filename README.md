@@ -20,7 +20,7 @@ Sou um estudante apaixonado por tecnologia e atualmente estou mergulhado no ecos
 ---
 
 ### 📊 Meus Projetos em Destaque
-- [**Estudos Java - Alura**](git@github.com:LuksCode/Projetos-iniciais-Java.git): Repositório onde organizo meus sistemas de Banco e Gerenciamento de Filmes (ScreenMatch), focando em arquitetura de pacotes e POO.
+- [**Estudos Java - Alura**](https://github.com/LuksCode/Projetos-iniciais-Java.git): Repositório onde organizo meus sistemas de Banco e Gerenciamento de Filmes (ScreenMatch), focando em arquitetura de pacotes e POO.
 
 ---
 
