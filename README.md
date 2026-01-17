@@ -25,8 +25,8 @@ Sou um estudante apaixonado por tecnologia e atualmente estou mergulhado no ecos
 ---
 
 ### 📫 Como me encontrar
-- **LinkedIn:** [https://www.linkedin.com/in/lucaslopesfreire/]
-- **Email:** [lopes.lucas379@gmail.com]
+- **LinkedIn:** https://www.linkedin.com/in/lucaslopesfreire/
+- **Email:** lopes.lucas379@gmail.com
 
 <br />
 
