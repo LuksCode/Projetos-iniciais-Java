@@ -7,6 +7,7 @@ public class ScreenMatch {
     private double somaAvaliacao;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
+    private String diretor;
 
 
     public String getTituloFilme() {
@@ -19,6 +20,14 @@ public class ScreenMatch {
 
     public boolean isIncluidoNoPlano() {
         return incluidoNoPlano;
+    }
+
+    public String getDiretor() {
+        return diretor;
+    }
+
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
     }
 
     public int getDuracaoEmMinutos() {
@@ -46,11 +55,17 @@ public class ScreenMatch {
     }
 
     public void exibirFichaTecnica(){
-        System.out.println("Nome do filme: " + getTituloFilme());
+        System.out.println("Título: " + getTituloFilme());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
-        System.out.println("Duração do filme: " + getDuracaoEmMinutos());
-        System.out.println("Plano: " + incluidoNoPlano);
 
+        exibirDadosAdicionais();
+
+        System.out.println("Diretor: " + diretor);
+        System.out.println("Duração: " + getDuracaoEmMinutos() + " minutos");
+        System.out.println("Plano: " + isIncluidoNoPlano());
+        System.out.printf("Número total de avaliações: %d%n", getTotalDeAvaliacoes());
+        System.out.printf("A média das avaliações no total é de: %.2f%n" , retornarMedia());
+        System.out.println();
     }
 
     public void avaliar(double nota) {
@@ -63,7 +78,12 @@ public class ScreenMatch {
 
     }
 
-     public int getTotalDeAvaliacoes() {
+    public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
+    }
+
+    // Mét/odo vazio que as filhas podem (ou não) sobrescrever
+    public void exibirDadosAdicionais() {
+        // Fica vazio na mãe
     }
 }
