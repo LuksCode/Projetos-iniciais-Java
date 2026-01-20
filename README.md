@@ -3,6 +3,7 @@
 ### 👨‍💻 Sobre mim
 Sou um estudante apaixonado por tecnologia e atualmente estou mergulhado no ecossistema **Java**. Meu foco é construir uma base sólida em Programação Orientada a Objetos (POO) e boas práticas de desenvolvimento.
 
+- 🎓 Estudante no Centro Universitário FAM em Analise e Desenvolvimento de Sistemas
 - 🎓 Estudante na **Alura**.
 - 🚀 Atualmente focado em: **Java 17+, Estrutura de Dados e Organização de Projetos**.
 - 🎯 Objetivo: Me tornar um desenvolvedor Java Backend capaz de criar soluções robustas e escaláveis.
