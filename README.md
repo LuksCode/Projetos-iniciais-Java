@@ -7,6 +7,7 @@ Sou um estudante apaixonado por tecnologia e atualmente estou mergulhado no ecos
 - 🎓 Estudante na **Alura**.
 - 🚀 Atualmente focado em: **Java 17+, Estrutura de Dados e Organização de Projetos**.
 - 🎯 Objetivo: Me tornar um desenvolvedor Java Backend capaz de criar soluções robustas e escaláveis.
+- Futuro: Após o Java, pretendo iniciar estudos em JS, com foco no node após ter uma base sólida em JS. 
 
 ---
 
