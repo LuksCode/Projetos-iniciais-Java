@@ -22,25 +22,22 @@ O início de uma aplicação para gerenciamento e avaliação de filmes.
     - **Criação de Classes e Objetos:** Instanciação e manipulação de atributos.
     - **Abstração:** Representação de entidades do mundo real em código Java.
 
-🎵 Projeto Melodix: Simulador de Player de Áudio
-O Melodix é um projeto desenvolvido para consolidar os fundamentos da Programação Orientada a Objetos (POO) em Java. Ele simula o comportamento de uma plataforma de streaming, gerenciando diferentes tipos de conteúdo de áudio.
+## 🎵 3. Melodix
+Simulador de Player de Áudio desenvolvido para consolidar os fundamentos da Programação Orientada a Objetos (POO) em Java, simulando o comportamento de uma plataforma de streaming.
 
-🚀 Principais Aprendizados e Implementações:
-Abstração e Herança: Criação de uma classe base Audio para centralizar atributos comuns (título, duração, total de reproduções) e herança para especializar em Musica e Podcast.
+Funcionalidades:
 
-Polimorfismo: Implementação de comportamentos específicos para cada tipo de áudio, permitindo que diferentes objetos sejam tratados de forma uniforme.
+Gerenciamento e reprodução de diferentes tipos de conteúdo de áudio (Músicas e Podcasts).
 
-Interfaces: Uso de interfaces para definir comportamentos que podem ser compartilhados entre classes, garantindo um código mais flexível e fácil de manter.
+Sistema de classificação dinâmico baseado em popularidade (curtidas e total de reproduções).
 
-Lógica de Negócio: Criação de um sistema de classificação baseado na popularidade (curtidas e reproduções), simulando o algoritmo de recomendação de grandes plataformas.
+Conceitos Aplicados:
 
-🛠️ Tecnologias Utilizadas:
-Linguagem: Java 17 (ou a versão que você estiver usando)
+Abstração e Herança: Criação de uma classe base Audio para atributos comuns e especialização nas subclasses Musica e Podcast.
 
-Paradigma: Orientado a Objetos (OOP)
+Polimorfismo: Implementação de métodos que permitem tratar diferentes objetos de áudio de forma uniforme.
 
-Ferramenta: IntelliJ IDEA
-
+Interfaces: Uso de contratos para definir comportamentos compartilhados, garantindo um código flexível e fácil de manter.
 ---
 
 ## 🏗️ Estrutura do Repositório
