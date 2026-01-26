@@ -22,6 +22,25 @@ O início de uma aplicação para gerenciamento e avaliação de filmes.
     - **Criação de Classes e Objetos:** Instanciação e manipulação de atributos.
     - **Abstração:** Representação de entidades do mundo real em código Java.
 
+🎵 Projeto Melodix: Simulador de Player de Áudio
+O Melodix é um projeto desenvolvido para consolidar os fundamentos da Programação Orientada a Objetos (POO) em Java. Ele simula o comportamento de uma plataforma de streaming, gerenciando diferentes tipos de conteúdo de áudio.
+
+🚀 Principais Aprendizados e Implementações:
+Abstração e Herança: Criação de uma classe base Audio para centralizar atributos comuns (título, duração, total de reproduções) e herança para especializar em Musica e Podcast.
+
+Polimorfismo: Implementação de comportamentos específicos para cada tipo de áudio, permitindo que diferentes objetos sejam tratados de forma uniforme.
+
+Interfaces: Uso de interfaces para definir comportamentos que podem ser compartilhados entre classes, garantindo um código mais flexível e fácil de manter.
+
+Lógica de Negócio: Criação de um sistema de classificação baseado na popularidade (curtidas e reproduções), simulando o algoritmo de recomendação de grandes plataformas.
+
+🛠️ Tecnologias Utilizadas:
+Linguagem: Java 17 (ou a versão que você estiver usando)
+
+Paradigma: Orientado a Objetos (OOP)
+
+Ferramenta: IntelliJ IDEA
+
 ---
 
 ## 🏗️ Estrutura do Repositório
