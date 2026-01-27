@@ -37,14 +37,12 @@ public class Musica extends br.com.Melodix.modelos.Audio implements Classificar 
     }
 
     @Override
-    public int classificou(int curtida) {
+    public void classificou(int curtida) {
         if ( curtida > 100000){
             System.out.println("Música mais bombada do momento: " + getTitulo());
-            return 10;
         }
         else {
             System.out.println("Música com números medianos: " + getTitulo());
-            return 8;
         }
     }
 }

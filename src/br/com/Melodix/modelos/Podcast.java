@@ -28,13 +28,12 @@ public class Podcast extends Audio implements Classificar {
     }
 
     @Override
-    public int classificou(int curtida) {
+    public void classificou(int curtida) {
         if ( curtida > 1000){
             System.out.println("Um dos podcasts mais ouvidos! " + getHost());
-            return 10;
         }
         else {
-            return 8;
+            System.out.println("Podcast mediano");
         }
     }
 }

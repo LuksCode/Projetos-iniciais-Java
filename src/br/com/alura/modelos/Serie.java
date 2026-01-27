@@ -48,4 +48,14 @@ public class Serie extends ScreenMatch  {
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
+
+    @Override
+    public String toString() {
+        return "Série: " + this.getTitulo() + " (" + this.getAnoDeLancamento() + ")";
+    }
+
+    public Serie(String nomeSerie) {
+        this.setTitulo(nomeSerie);
+    }
 }
+
