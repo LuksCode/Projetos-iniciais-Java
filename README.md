@@ -22,6 +22,22 @@ O início de uma aplicação para gerenciamento e avaliação de filmes.
     - **Criação de Classes e Objetos:** Instanciação e manipulação de atributos.
     - **Abstração:** Representação de entidades do mundo real em código Java.
 
+## 🎵 3. Melodix
+Simulador de Player de Áudio desenvolvido para consolidar os fundamentos da Programação Orientada a Objetos (POO) em Java, simulando o comportamento de uma plataforma de streaming.
+
+- **Funcionalidades:**
+
+Gerenciamento e reprodução de diferentes tipos de conteúdo de áudio (Músicas e Podcasts).
+
+Sistema de classificação dinâmico baseado em popularidade (curtidas e total de reproduções).
+
+- **Conceitos Aplicados:**
+
+**Abstração e Herança:** Criação de uma classe base Audio para atributos comuns e especialização nas subclasses Musica e Podcast.
+
+**Polimorfismo:** Implementação de métodos que permitem tratar diferentes objetos de áudio de forma uniforme.
+
+**Interfaces:** Uso de contratos para definir comportamentos compartilhados, garantindo um código flexível e fácil de manter.
 ---
 
 ## 🏗️ Estrutura do Repositório
