@@ -15,8 +15,8 @@ public class Filme extends ScreenMatch implements Classificavel {
         return "Filme: " + this.getTitulo() + " (" + this.getAnoDeLancamento() + ")";
     }
 
-    public Filme(String nomeFilme){
-        this.setTitulo(nomeFilme);
+    public Filme(String titulo, int anoDeLancamento){
+        super(titulo, anoDeLancamento);
     }
 
 }

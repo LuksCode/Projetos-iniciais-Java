@@ -1,10 +1,21 @@
 package br.com.alura.modelos;
 
-public class Serie extends ScreenMatch  {
+import br.com.alura.screenmatch.calculos.Classificavel;
+
+public class Serie extends ScreenMatch  implements Classificavel {
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;
+    private int totalVisuzalicoes;
+
+    public int getTotalVisuzalicoes() {
+        return totalVisuzalicoes;
+    }
+
+    public void setTotalVisuzalicoes(int totalVisuzalicoes) {
+        this.totalVisuzalicoes = totalVisuzalicoes;
+    }
 
     public int getTemporadas() {
         return temporadas;
@@ -38,6 +49,7 @@ public class Serie extends ScreenMatch  {
         this.ativa = ativa;
 
     }
+
     @Override
     public void exibirDadosAdicionais() {
         System.out.println("Temporadas: " + temporadas);
@@ -54,8 +66,18 @@ public class Serie extends ScreenMatch  {
         return "Série: " + this.getTitulo() + " (" + this.getAnoDeLancamento() + ")";
     }
 
-    public Serie(String nomeSerie) {
-        this.setTitulo(nomeSerie);
+    public Serie(String titulo, int anoDeLancamento) {
+        super(titulo, anoDeLancamento);
+    }
+
+    @Override
+    public int getClassificacao() {
+        if (totalVisuzalicoes > 100) {
+            return 4;
+        } else {
+            return 2;
+        }
+
     }
 }
 

@@ -68,6 +68,11 @@ public class ScreenMatch {
         System.out.println();
     }
 
+    public ScreenMatch(String titulo, int anoDeLancamento) {
+        this.titulo = titulo;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public void avaliar(double nota) {
         somaAvaliacao += nota;
         totalDeAvaliacoes++;
@@ -86,5 +91,7 @@ public class ScreenMatch {
     public void exibirDadosAdicionais() {
         // Fica vazio na mãe
     }
+
+
 
 }

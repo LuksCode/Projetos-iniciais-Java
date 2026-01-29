@@ -12,9 +12,8 @@ import java.util.ArrayList;
 public class PrincipalScreenMatch {
     public static void main(String[] args) {
 
-        Filme velozesFilme = new Filme("Velozes e Furiosos");
+        Filme velozesFilme = new Filme("Velozes e Furiosos", 2001);
         velozesFilme.setDiretor("Rob Cohen");
-        velozesFilme.setAnoDeLancamento(2001);
         velozesFilme.setIncluidoNoPlano(true);
         velozesFilme.setDuracaoEmMinutos(107);
 
@@ -25,8 +24,7 @@ public class PrincipalScreenMatch {
 
         velozesFilme.exibirFichaTecnica();
 
-        Serie lostSerie = new Serie("Lost");
-        lostSerie.setAnoDeLancamento(2004);
+        Serie lostSerie = new Serie("Lost", 2004);
         lostSerie.setDiretor("Jack Bender");
         lostSerie.setTemporadas(10);
         lostSerie.setEpisodiosPorTemporada(20);
@@ -40,9 +38,8 @@ public class PrincipalScreenMatch {
 
         lostSerie.exibirFichaTecnica();
 
-        var peakyBlindersSerie = new Serie("Peaky Blinders");
+        var peakyBlindersSerie = new Serie("Peaky Blinders", 2013);
 
-        peakyBlindersSerie.setAnoDeLancamento(2013);
         peakyBlindersSerie.setDiretor("Steven Knigh");
         peakyBlindersSerie.setTemporadas(6);
         peakyBlindersSerie.setEpisodiosPorTemporada(6);
@@ -57,9 +54,8 @@ public class PrincipalScreenMatch {
         peakyBlindersSerie.exibirFichaTecnica();
 
 
-        Filme creedFilme = new Filme("Creed: Nascido Para Lutar");
+        Filme creedFilme = new Filme("Creed: Nascido Para Lutar", 2015);
 
-        creedFilme.setAnoDeLancamento(2015);
         creedFilme.setDiretor("Ryan Coogler");
         creedFilme.setIncluidoNoPlano(true);
         creedFilme.setDuracaoEmMinutos(133);
@@ -72,9 +68,8 @@ public class PrincipalScreenMatch {
         creedFilme.exibirFichaTecnica();
 
 
-        Filme oppenheimerFilme = new Filme("Oppenheimer");
+        Filme oppenheimerFilme = new Filme("Oppenheimer", 2023);
 
-        oppenheimerFilme.setAnoDeLancamento(2023);
         oppenheimerFilme.setDiretor("Christopher Nolan");
         oppenheimerFilme.setDuracaoEmMinutos(180);
         oppenheimerFilme.setIncluidoNoPlano(true);
@@ -128,6 +123,9 @@ public class PrincipalScreenMatch {
         System.out.println("Quantidade de séries: " + listaDeSeries.size());
         System.out.println("Segunda Série: " + listaDeSeries.get(1).getTitulo());
         System.out.println(listaDeSeries);
+
+        peakyBlindersSerie.setTotalVisuzalicoes(200);
+        filtro.filtrar(peakyBlindersSerie);
 
     }
 
