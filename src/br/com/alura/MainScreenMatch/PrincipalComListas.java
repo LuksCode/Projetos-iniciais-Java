@@ -3,10 +3,10 @@ package br.com.alura.MainScreenMatch;
 import br.com.alura.modelos.Filme;
 import br.com.alura.modelos.ScreenMatch;
 import br.com.alura.modelos.Serie;
-import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 
-import java.util.ArrayList;
- // Classe de testes com Listas
+import java.util.*;
+
+// Classe de testes com Listas
 public class PrincipalComListas {
     public static void main(String[] args) {
 
@@ -25,7 +25,7 @@ public class PrincipalComListas {
         Serie lostSerie = new Serie("Lost", 2004);
         var peakyBlindersSerie = new Serie("Peaky Blinders", 2013);
 
-        ArrayList<ScreenMatch> listaDeAssistidos = new ArrayList<>();
+        List<ScreenMatch> listaDeAssistidos = new LinkedList<>();
 
         listaDeAssistidos.add(velozesFilme);
         listaDeAssistidos.add(creedFilme);
@@ -33,8 +33,7 @@ public class PrincipalComListas {
         listaDeAssistidos.add(lostSerie);
         listaDeAssistidos.add(peakyBlindersSerie);
         peakyBlindersSerie.setTotalVisuzalicoes(200);
-
-        System.out.println(listaDeAssistidos);
+        Collections.sort(listaDeAssistidos);
 
         System.out.println("------- Lista de Assistidos -------");
         for (ScreenMatch item : listaDeAssistidos) {
@@ -45,7 +44,27 @@ public class PrincipalComListas {
             if (item instanceof Serie serie) {
                 System.out.println(serie.getClassificacao());
             }
-
         }
+
+        List<String> buscaPorArtista = new LinkedList<>();
+
+        buscaPorArtista.add("John Bertnhal");
+        buscaPorArtista.add("Lucas");
+        buscaPorArtista.add("Jacqueline");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação: ");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(listaDeAssistidos);
+        listaDeAssistidos.sort(Comparator.comparing(ScreenMatch::getAnoDeLancamento));
+        System.out.println("Ordenando por ano de lançamento");
+        System.out.println(listaDeAssistidos);
+
+
+
+
     }
+
 }
